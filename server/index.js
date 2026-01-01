@@ -18,16 +18,20 @@ dotenv.config();
 
 const app = express();
 const server = http.createServer(app);
-const io = socketIo(server, {
-  cors: {
-    origin: process.env.CLIENT_URL,
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true
-  }
-});
-
+// const io = socketIo(server, {
+//   cors: {
+//     origin: process.env.CLIENT_URL,
+//     methods: ["GET", "POST", "PUT", "DELETE"],
+//     credentials: true
+//   }
+// });
+app.use(cors({
+  origin: [
+    "https://mettl-stack-hack-3-0.vercel.app"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+}));
 // Middleware
-app.use(cors());
 app.use(express.json());
 app.use('/uploads', express.static('uploads'));
 
