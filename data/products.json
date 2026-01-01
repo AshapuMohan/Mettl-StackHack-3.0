@@ -1,0 +1,168 @@
+{
+  "categories": [
+    {
+      "name": "Electronics",
+      "slug": "electronics",
+      "description": "Latest gadgets and electronic devices",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=500",
+        "alt": "Electronics"
+      }
+    },
+    {
+      "name": "Footwear",
+      "slug": "footwear", 
+      "description": "Shoes and sneakers for all occasions",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=500",
+        "alt": "Footwear"
+      }
+    },
+    {
+      "name": "Clothing",
+      "slug": "clothing",
+      "description": "Fashion and apparel for everyone",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500",
+        "alt": "Clothing"
+      }
+    },
+    {
+      "name": "Home & Kitchen",
+      "slug": "home-kitchen",
+      "description": "Everything for your home and kitchen",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=500",
+        "alt": "Home & Kitchen"
+      }
+    },
+    {
+      "name": "Sports & Fitness",
+      "slug": "sports-fitness",
+      "description": "Sports equipment and fitness gear",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500",
+        "alt": "Sports & Fitness"
+      }
+    },
+    {
+      "name": "Beauty & Personal Care",
+      "slug": "beauty-personal-care",
+      "description": "Beauty products and personal care items",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=500",
+        "alt": "Beauty & Personal Care"
+      }
+    }
+  ],
+  "sellers": [
+    {
+      "name": "TechWorld",
+      "email": "techworld@marketplace.com",
+      "description": "Leading retailer of consumer electronics and gadgets",
+      "rating": 4.8,
+      "totalProducts": 150,
+      "joinedDate": "2023-01-15"
+    },
+    {
+      "name": "SneakerHub", 
+      "email": "sneakerhub@marketplace.com",
+      "description": "Premium sneakers and athletic footwear specialist",
+      "rating": 4.9,
+      "totalProducts": 85,
+      "joinedDate": "2023-02-20"
+    },
+    {
+      "name": "SportZone",
+      "email": "sportzone@marketplace.com", 
+      "description": "Complete sports and fitness equipment store",
+      "rating": 4.7,
+      "totalProducts": 120,
+      "joinedDate": "2023-03-10"
+    }
+  ],
+  "sampleProducts": [
+    {
+      "name": "iPhone 14 Pro",
+      "description": "Latest iPhone with A16 Bionic chip, Pro camera system, and Dynamic Island",
+      "price": 999.99,
+      "originalPrice": 1099.99,
+      "category": "Electronics",
+      "seller": "TechWorld",
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=500",
+          "alt": "iPhone 14 Pro"
+        }
+      ],
+      "specifications": [
+        {"key": "Storage", "value": "128GB"},
+        {"key": "Display", "value": "6.1 inch"},
+        {"key": "Camera", "value": "48MP"},
+        {"key": "Battery", "value": "3200mAh"}
+      ],
+      "inventory": {
+        "quantity": 25,
+        "lowStockThreshold": 10
+      },
+      "shipping": {
+        "weight": 0.5,
+        "freeShipping": true,
+        "shippingCost": 0
+      },
+      "ratings": {
+        "average": 4.6,
+        "count": 128
+      },
+      "tags": ["apple", "iphone", "smartphone", "premium"],
+      "isDigital": false
+    },
+    {
+      "name": "Nike Air Max 270",
+      "description": "Premium running shoes with Air Max technology for ultimate comfort",
+      "price": 129.99,
+      "originalPrice": 149.99,
+      "category": "Footwear",
+      "seller": "SneakerHub",
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500",
+          "alt": "Nike Air Max 270"
+        }
+      ],
+      "specifications": [
+        {"key": "Material", "value": "Synthetic Leather"},
+        {"key": "Sole", "value": "Rubber"},
+        {"key": "Size Range", "value": "6-12"},
+        {"key": "Color", "value": "Black/White"}
+      ],
+      "inventory": {
+        "quantity": 45,
+        "lowStockThreshold": 10
+      },
+      "shipping": {
+        "weight": 1.2,
+        "freeShipping": true,
+        "shippingCost": 0
+      },
+      "ratings": {
+        "average": 4.8,
+        "count": 89
+      },
+      "tags": ["nike", "shoes", "running", "athletic"],
+      "isDigital": false
+    }
+  ],
+  "productStats": {
+    "totalProducts": 30,
+    "categories": 9,
+    "sellers": 20,
+    "averagePrice": 87.45,
+    "priceRange": {
+      "min": 14.99,
+      "max": 1199.99
+    },
+    "digitalProducts": 1,
+    "physicalProducts": 29
+  }
+}
