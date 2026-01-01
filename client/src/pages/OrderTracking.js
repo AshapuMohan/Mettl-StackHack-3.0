@@ -18,7 +18,7 @@ const OrderTracking = () => {
 
   useEffect(() => {
     // Initialize socket connection for real-time updates
-    const newSocket = io(process.env.REACT_APP_API_URL || 'http://localhost:5000');
+    const newSocket = io(process.env.REACT_APP_API_BASE_URL || 'http://localhost:5002');
     setSocket(newSocket);
 
     // Join order room for real-time updates

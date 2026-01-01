@@ -1,9 +1,7 @@
 import axios from 'axios';
 
 // Set base URL for API calls - use relative URLs in development to work with proxy
-axios.defaults.baseURL = process.env.NODE_ENV === 'production' 
-  ? process.env.REACT_APP_API_URL || 'http://localhost:5000'
-  : '';
+axios.defaults.baseURL = process.env.REACT_APP_API_BASE_URL || '';
 
 // Add request interceptor to include auth token
 axios.interceptors.request.use(

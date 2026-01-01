@@ -20,7 +20,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: process.env.CLIENT_URL || "http://localhost:3000",
+    origin: process.env.CLIENT_URL,
     methods: ["GET", "POST"]
   }
 });
@@ -90,11 +90,12 @@ app.get('/api/health', (req, res) => {
 // Connect to MongoDB with better error handling
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/marketplace', {
+    await mongoose.connect(process.env.MONGODB_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
     console.log('✅ Connected to MongoDB');
+    console.log(`Database URL: ${process.env.MONGODB_URI}`)
   } catch (err) {
     console.error('❌ MongoDB connection error:', err.message);
     // Retry connection after 5 seconds
@@ -124,7 +125,7 @@ mongoose.connection.on('reconnected', () => {
 // Initialize database connection
 connectDB();
 
-const PORT = process.env.PORT || 5002;
+const PORT = process.env.PORT;
 server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
