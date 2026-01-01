@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
-const Product = require('../server/models/Product');
-const Category = require('../server/models/Category');
-const User = require('../server/models/User');
+const Product = require('../models/Product');
+const Category = require('../models/Category');
+const User = require('../models/User');
 
 // Connect to MongoDB
 const connectDB = async () => {

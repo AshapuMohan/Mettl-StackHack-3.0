@@ -5,9 +5,9 @@ const csv = require('csv-parser');
 require('dotenv').config();
 
 // Import models
-const User = require('../server/models/User');
-const Category = require('../server/models/Category');
-const Product = require('../server/models/Product');
+const User = require('../models/User');
+const Category = require('../models/Category');
+const Product = require('../models/Product');
 
 // Categories data
 const categoriesData = [
@@ -108,7 +108,7 @@ async function seedProducts(categories, sellers) {
   console.log('📦 Seeding products from CSV...');
   
   const products = [];
-  const csvPath = path.join(__dirname, '../data/products.csv');
+  const csvPath = path.join(__dirname, '../../client/data/products.csv');
   
   return new Promise((resolve, reject) => {
     fs.createReadStream(csvPath)

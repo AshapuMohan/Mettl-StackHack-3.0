@@ -2,9 +2,9 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 // Import models
-const User = require('../server/models/User');
-const Category = require('../server/models/Category');
-const Product = require('../server/models/Product');
+const User = require('../models/User');
+const Category = require('../models/Category');
+const Product = require('../models/Product');
 
 async function connectDB() {
   try {
